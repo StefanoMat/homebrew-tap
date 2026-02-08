@@ -5,21 +5,21 @@
 class Bakemcp < Formula
   desc "Turn any OpenAPI 3.x spec into a ready-to-run MCP server"
   homepage "https://github.com/stefanoMat/bakemcp"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stefanoMat/bakemcp/releases/download/v0.2.0/bakemcp_darwin_amd64.tar.gz"
-      sha256 "4ec0a22061dc6e8b1c7109f29f6fc48547936a09e972ce753bb9c46da8a6d863"
+      url "https://github.com/stefanoMat/bakemcp/releases/download/v0.2.1/bakemcp_darwin_amd64.tar.gz"
+      sha256 "435bb3f308abca8a03bb6eccfb5df0536c39a8d9a4d83681b27afb10d632323f"
 
       def install
         bin.install "bakemcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stefanoMat/bakemcp/releases/download/v0.2.0/bakemcp_darwin_arm64.tar.gz"
-      sha256 "4024e21530a0d3e4f6577ab25fc5ad25ba79bd39c130fe04e1a3c7dbb0a42114"
+      url "https://github.com/stefanoMat/bakemcp/releases/download/v0.2.1/bakemcp_darwin_arm64.tar.gz"
+      sha256 "4da2037beca030a1fee373342174789fbced056178c4697557c7716ae39a0e41"
 
       def install
         bin.install "bakemcp"
@@ -29,15 +29,15 @@ class Bakemcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stefanoMat/bakemcp/releases/download/v0.2.0/bakemcp_linux_amd64.tar.gz"
-      sha256 "1ea3224d2eb8e2344b342162848a0fd1d7c9731c62f37c1fd011a1ac16b4b38f"
+      url "https://github.com/stefanoMat/bakemcp/releases/download/v0.2.1/bakemcp_linux_amd64.tar.gz"
+      sha256 "0b503ec1751065a43e0b21a213f0f72fb9fd39144ab4aa078a697380f71840d0"
       def install
         bin.install "bakemcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stefanoMat/bakemcp/releases/download/v0.2.0/bakemcp_linux_arm64.tar.gz"
-      sha256 "92763a4676d3dc4c86c0ccf4f681ab7b4be1d71307c3945c8a769553912a416f"
+      url "https://github.com/stefanoMat/bakemcp/releases/download/v0.2.1/bakemcp_linux_arm64.tar.gz"
+      sha256 "e9bba5d7382ca8aaf5d9f6c5db536c2a30f8ec94002c6f3c65151a37a05dc575"
       def install
         bin.install "bakemcp"
       end
